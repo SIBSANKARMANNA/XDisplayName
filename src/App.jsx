@@ -11,15 +11,14 @@ function App() {
   const handleSubmit = (e) => {
 
     e.preventDefault();
-    // if(!fname || !lname) {
-    //   alert("Please enter both first name and last name.");
-    //   return;
-    // }
+    if(!fname || !lname) {
+      return;
+    }
     if(fname && lname) {
       setFullname(`${fname} ${lname}`);
     }
-    setFname("");
-    setLname("");
+    // setFname("");
+    // setLname("");
   }
 
   return (
